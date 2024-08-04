@@ -1,57 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon - Django Tutorial</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f3f4f6;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 3rem;
-            color: #333;
-        }
-        p {
-            font-size: 1.5rem;
-            color: #555;
-        }
-        .contact-options {
-            margin-top: 20px;
-        }
-        .contact-options a {
-            display: inline-block;
-            margin: 0 10px;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: white;
-            background-color: #007bff;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .contact-options a:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Coming Soon | Django Tutorial for beginners  </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.svg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
+
 <body>
-    <div class="container">
-        <h1>Coming Soon</h1>
-        <p>Our website is under maintenance. Stay tuned!</p>
-        <div class="contact-options">
-            <a href="mailto:your-email@example.com">Email Us</a>
-            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex flex-column align-items-center">
+
+      <h1>Django-tutorial.dev</h1>
+      <h2>We're working hard to create our website and we'll ready to launch after</h2>
+      <div class="countdown d-flex justify-content-center" data-count="2023/12/3">
+        <div>
+          <h3>%d</h3>
+          <h4>Days</h4>
         </div>
+        <div>
+          <h3>%h</h3>
+          <h4>Hours</h4>
+        </div>
+        <div>
+          <h3>%m</h3>
+          <h4>Minutes</h4>
+        </div>
+        <div>
+          <h3>%s</h3>
+          <h4>Seconds</h4>
+        </div>
+      </div>
+
+      <div class="subscribe">
+        <h4>Subscribe now to get the latest updates!</h4>
+        <form action="forms/notify.php" method="post" role="form" class="php-email-form">
+          <div class="subscribe-form">
+            <input type="email" name="email" required><input type="submit" value="Subscribe">
+          </div>
+          <div class="mt-2">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your notification request was sent. Thank you!</div>
+          </div>
+        </form>
+      </div>
+
+      <div class="social-links text-center">
+        <a href="https://www.facebook.com/nischalfrompokhara/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+
+        <a href="https://www.linkedin.com/in/hehenischal" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
     </div>
+  </header><!-- End #header -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About This Site</h2>
+          <p>I am an Open Source Supporter and Full Stack Django Developer. 
+             I am creating this site to teach Django to new tech enthusiasts around the world.</p>
+      </div>
+      
+      <div class="row mt-2">
+          <div class="col-lg-4 col-md-6 icon-box">
+              <div class="icon"><i class="bi bi-code-slash"></i></div>
+              <h4 class="title"><a href="">Easy to Learn</a></h4>
+              <p class="description">Django is a Python framework that, like Python, is easy to learn. There are always new things to explore and discover.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+              <div class="icon"><i class="bi bi-bar-chart"></i></div>
+              <h4 class="title"><a href="">Market Scope</a></h4>
+              <p class="description">The demand for simplistic and efficient technology is growing, making Django an increasingly valuable skill in the market.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+              <div class="icon"><i class="bi bi-lightbulb"></i></div>
+              <h4 class="title"><a href="">Innovative and Modern</a></h4>
+              <p class="description">Django encourages innovative and modern web development practices, helping you stay ahead in the tech industry.</p>
+          </div>
+      </div>
+      
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Pokhara</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>admin@django-tutorial.dev</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+977 9848 259 332</p>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112488.41424406703!2d83.87421687744293!3d28.229697706094154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995937bbf0376ff%3A0xf6cf823b25802164!2sPokhara!5e0!3m2!1sen!2snp!4v1722782937776!5m2!1sen!2snp" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="https://formsubmit.co/admin@django-tutorial.dev" method="POST"  class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_autoresponse" value="Thanks for Getting in contact, We will Get back to you ASAP!!!">
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Maundy</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
