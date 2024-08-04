@@ -1,2 +1,2 @@
 # django-tutorial
-this is the repo for "django-tutorial.dev"
+this is the Pre-repo for "django-tutorial.dev"
