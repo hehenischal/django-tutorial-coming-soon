@@ -1,0 +1,1294 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Django Tutorial</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="title" property="og:title" content="django-tutorial.dev" />
+		<meta
+			name="Keywords"
+			content="Python for Django, Django, Django Roadmap for beginners, Django developer roadmap, roadmap for django developer" />
+		<meta
+			name="Description"
+			content="Well Taught and Constructed Tutorial for the Django Framework for complete beginners" />
+		<meta property="og:image" content="assets/favicon.svg" />
+		<meta property="og:image:type" content="image/svg" />
+		<meta property="og:image:width" content="436" />
+		<meta property="og:image:height" content="228" />
+		<meta
+			property="og:description"
+            content="Django Tutorial offers well-structured and comprehensive tutorials for the Django framework, aimed at complete beginners. Learn Django, Python, and web development with our step-by-step guides." />
+		<link rel="icon" href="assets/favicon.svg" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="assets/favicon.svg" />
+		<link
+			rel="icon"
+			type="image/svg"
+			sizes="32x32"
+			href="assets/favicon.svg" />
+		<link
+			rel="icon"
+			type="image/svg"
+			sizes="16x16"
+			href="assets/favicon.svg" />
+		<link rel="mask-icon" href="assets/favicon.svg" color="#04aa6d" />
+		<meta name="msapplication-TileColor" content="#00a300" />
+		<meta name="theme-color" content="#ffffff" />
+		<link
+			rel="preload"
+			href="assets/assets/lib/fonts/fontawesome.woff2  "
+			as="font"
+			type="font/woff2"
+			crossorigin />
+		<link
+			rel="preload"
+			href="assets/assets/lib/fonts/source-code-pro-v14-latin-regular.woff2  "
+			as="font"
+			type="font/woff2"
+			crossorigin />
+		<link
+			rel="preload"
+			href="assets/assets/lib/fonts/roboto-mono-v13-latin-500.woff2  "
+			as="font"
+			type="font/woff2"
+			crossorigin />
+		<link
+			rel="preload"
+			href="assets/assets/lib/fonts/source-sans-pro-v14-latin-700.woff2  "
+			as="font"
+			type="font/woff2"
+			crossorigin />
+		<link
+			rel="preload"
+			href="assets/assets/lib/fonts/source-sans-pro-v14-latin-600.woff2  "
+			as="font"
+			type="font/woff2"
+			crossorigin />
+		<link
+			rel="preload"
+			href="assets/assets/lib/fonts/SourceSansPro-Regular.woff2  "
+			as="font"
+			type="font/woff2"
+			crossorigin />
+		<link
+			rel="preload"
+			href="assets/assets/lib/fonts/freckle-face-v9-latin-regular.woff2  "
+			as="font"
+			type="font/woff2"
+			crossorigin />
+		<link
+			rel="stylesheet"
+			href="assets/assets/lib/topnav/main.css  " />
+		<link
+			rel="stylesheet"
+			href="assets/assets/lib/my-learning/main.css  " />
+		<link
+			rel="stylesheet"
+			href="assets/assets/lib/pathfinder/main.css  " />
+		<link
+			rel="stylesheet"
+			href="assets/assets/lib/django-tutorial.css  " />
+		<link
+			rel="stylesheet"
+			href="assets/assets/plus/plans/main.css  " />
+		<script src='assets/assets/lib/prism2.js'></script>
+		<link rel="stylesheet" href="assets/assets/lib/prism1.css  " />
+
+
+		<!-- {% comment %} <script src="assets/assets/lib/uic.js  "></script> {% endcomment %} -->
+		
+		
+		<script type="text/javascript">
+			var stickyadstatus = "";
+		</script>
+		<script src="assets/assets/lib/common-deps.js  "></script>
+		<script src="assets/assets/lib/user-session.js  "></script>
+		<script src="assets/assets/lib/my-learning/main.js  "></script>
+		<style>
+			.startlearningbtn {
+				font-size: 18px;
+				padding-left: 25px;
+				padding-right: 25px;
+				font-family: "Source Sans Pro", sans-serif;
+				margin-top: 6px;
+				/*background-color:#282A35!important;*/
+			}
+			/*.startlearningbtn:hover {
+			  background-color:#000!important;
+			}*/
+			.red-intro-emoji {
+				float: right;
+				font-size: 70px;
+				color: #ffc0c7;
+			}
+			body.darkpagetheme .red-intro-emoji {
+				color: #ee566a;
+			}
+
+			.bigbtn {
+				margin-bottom: 5px;
+				height: 65px;
+				width: 24%;
+				font-size: 16px;
+				padding: 20px 0;
+				text-align: center;
+				vertical-align: middle;
+				display: inline-block;
+				text-decoration: none !important;
+				border-radius: 5px;
+			}
+
+			@media screen and (max-width: 600px) {
+				.bigbtn {
+					display: block;
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="tnb-search-suggestions"></div>
+		<div id="top-nav-bar" class="classic">
+            <div id="pagetop" class="w3-bar notranslate w3-white">
+                <a
+                    id="django-tutorial-home-link"
+                    href="/"
+                    class="w3-bar-item w3-button w3-hover-none w3-left ga-top ga-top-w3home"
+                    title="Home"
+                    style="width: 75px"
+                    aria-label="Home link">
+                    <img src="assets/favicon.svg" 
+                        height="36"
+                        alt="django-tutorial.dev logo"
+                        class="fa ws-hover-text-green"
+                        style="
+                            position: relative;
+                            z-index: 1;
+                            color: #04aa6d;
+                            font-size: 36px !important;
+                        "
+                        aria-hidden="true"/>
+                </a>
+        
+                <nav class="tnb-desktop-nav w3-bar-item">
+                    <a
+                        class="tnb-nav-btn w3-bar-item w3-button barex bar-item-hover w3-padding-16 tnb-paid-service ga-top ga-top-cert-and-course"
+                        href="javascript:void(0);"
+                        onclick="alert('Will launch with the full site!')"
+                        id="navbtn_certified"
+                        title="Get Certificate"
+                        role="button">
+                        Get Certificate
+                    </a>
+                    
+                </nav>
+        
+        
+        
+                <div id="tnb-google-search-container" class="w3-bar-item">
+                    <div id="tnb-google-search-inner-container">
+                        <label
+                            for="tnb-google-search-input"
+                            class="tnb-soft-hide">
+                            Search field
+                        </label>
+        
+                        <input
+                            id="tnb-google-search-input"
+                            type="text"
+                            placeholder="Search..."
+                            autocomplete="off"
+                            onkeydown="TopNavBar.googleSearchAttachKeyPressHandler(event)"
+                            aria-label="Search field"
+                            oninput="TopNavBar.searchWithSuggestions(this)"
+                            onfocus="TopNavBar.searchWithSuggestions(this)"
+                            onblur="TopNavBar.searchFieldLostFocus(event)" />
+        
+                        <div
+                            id="tnb-google-search-submit-btn"
+                            class="tnb-button-light"
+                            role="button"
+                            aria-label="Button to search"
+                            onclick="TopNavBar.googleSearchSubmit()">
+                            <svg
+                                id="tnb-google-search-icon"
+                                viewBox="0 0 17 16"
+                                fill="none"
+                                xmlns="http://www.djangp-tutorial.dev/assets/favicon.svg">
+                                <path
+                                    d="M11.8153 10.3439C12.6061 9.2673 13.0732 7.9382 13.0732 6.5C13.0732 2.91015 10.163 0 6.57318 0C2.98333 0 0.0731812 2.91015 0.0731812 6.5C0.0731812 10.0899 2.98333 13 6.57318 13C8.01176 13 9.3412 12.5327 10.4179 11.7415L10.4171 11.7422C10.4466 11.7822 10.4794 11.8204 10.5156 11.8566L14.3661 15.7071C14.7566 16.0976 15.3898 16.0976 15.7803 15.7071C16.1708 15.3166 16.1708 14.6834 15.7803 14.2929L11.9298 10.4424C11.8936 10.4062 11.8553 10.3734 11.8153 10.3439ZM12.0732 6.5C12.0732 9.53757 9.61075 12 6.57318 12C3.53561 12 1.07318 9.53757 1.07318 6.5C1.07318 3.46243 3.53561 1 6.57318 1C9.61075 1 12.0732 3.46243 12.0732 6.5Z"
+                                    fill="black"></path>
+                            </svg>
+                        </div>
+                    </div>
+        
+                    <div id="tnb-google-search-mobile-action-btns">
+                        <div
+                            id="tnb-google-search-mobile-show"
+                            class="tnb-button"
+                            onclick="TopNavBar.googleSearchShowMobileContainer()"
+                            aria-label="Button to open search field"
+                            role="button">
+                            <svg
+                                viewBox="0 0 17 16"
+                                fill="none"
+                                xmlns="https://djangp-tutorial.dev/assets/favicon.svg">
+                                <path
+                                    d="M11.8153 10.3439C12.6061 9.2673 13.0732 7.9382 13.0732 6.5C13.0732 2.91015 10.163 0 6.57318 0C2.98333 0 0.0731812 2.91015 0.0731812 6.5C0.0731812 10.0899 2.98333 13 6.57318 13C8.01176 13 9.3412 12.5327 10.4179 11.7415L10.4171 11.7422C10.4466 11.7822 10.4794 11.8204 10.5156 11.8566L14.3661 15.7071C14.7566 16.0976 15.3898 16.0976 15.7803 15.7071C16.1708 15.3166 16.1708 14.6834 15.7803 14.2929L11.9298 10.4424C11.8936 10.4062 11.8553 10.3734 11.8153 10.3439ZM12.0732 6.5C12.0732 9.53757 9.61075 12 6.57318 12C3.53561 12 1.07318 9.53757 1.07318 6.5C1.07318 3.46243 3.53561 1 6.57318 1C9.61075 1 12.0732 3.46243 12.0732 6.5Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+        
+                        <div
+                            id="tnb-google-search-mobile-close"
+                            class="tnb-button"
+                            onclick="TopNavBar.googleSearchHideMobileContainer()"
+                            role="button"
+                            aria-label="Close search field">
+                            <i>&times;</i>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="tnb-dark-mode-toggle-wrapper" class="w3-bar-item">
+                    <a
+                        id="tnb-dark-mode-toggle-btn"
+                        href="javascript:void(0);"
+                        class="tnb-button fa ga-nav ga-dark-mode-toggle"
+                        onclick="TopNavBar.toggleUserPreferredTheme()"
+                        role="button"
+                        title="Toggle light/dark mode"
+                        aria-label="Toggle light/dark mode">
+                        <i>&#xe80b;</i>
+                    </a>
+                </div>
+        
+                <div class="tnb-right-section">
+                    <!-- <a
+                        href="https://profile.w3schools.com/log-in"
+                        class="user-anonymous tnb-login-btn w3-bar-item w3-btn w3-hide bar-item-hover w3-right ws-light-green ga-top ga-top-login"
+                        title="Login to your account"
+                        aria-label="Login to your account">
+                        Log in
+                    </a>
+        
+                    <a
+                        href="https://profile.w3schools.com/sign-up"
+                        class="user-anonymous tnb-signup-btn w3-bar-item w3-button w3-hide w3-right ws-green ws-hover-green ga-top ga-top-signup"
+                        title="Sign Up to Improve Your Learning Experience"
+                        aria-label="Sign Up to Improve Your Learning Experience">
+                        Sign Up
+                    </a>
+                    
+        
+                    
+                    <a
+                        href="https://profile.w3schools.com/log-in"
+                        class="user-authenticated user-profile-btn w3-alt-btn w3-hide ga-top ga-top-profile"
+                        title="Your W3Schools Profile"
+                        aria-label="Your W3Schools Profile">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            viewBox="0 0 2048 2048"
+                            class="user-profile-icon"
+                            aria-label="Your W3Schools Profile Icon">
+                            <path
+                                d="M 843.500 1148.155 C 837.450 1148.515, 823.050 1149.334, 811.500 1149.975 C 742.799 1153.788, 704.251 1162.996, 635.391 1192.044 C 517.544 1241.756, 398.992 1352.262, 337.200 1470 C 251.831 1632.658, 253.457 1816.879, 340.500 1843.982 C 351.574 1847.431, 1696.426 1847.431, 1707.500 1843.982 C 1794.543 1816.879, 1796.169 1632.658, 1710.800 1470 C 1649.008 1352.262, 1530.456 1241.756, 1412.609 1192.044 C 1344.588 1163.350, 1305.224 1153.854, 1238.500 1150.039 C 1190.330 1147.286, 1196.307 1147.328, 1097 1149.035 C 1039.984 1150.015, 1010.205 1150.008, 950 1149.003 C 851.731 1147.362, 856.213 1147.398, 843.500 1148.155"
+                                stroke="none"
+                                fill="#2a93fb"
+                                fill-rule="evenodd" />
+                            <path
+                                d="M 1008 194.584 C 1006.075 194.809, 999.325 195.476, 993 196.064 C 927.768 202.134, 845.423 233.043, 786 273.762 C 691.987 338.184, 622.881 442.165, 601.082 552 C 588.496 615.414, 592.917 705.245, 611.329 760.230 C 643.220 855.469, 694.977 930.136, 763.195 979.321 C 810.333 1013.308, 839.747 1026.645, 913.697 1047.562 C 1010.275 1074.879, 1108.934 1065.290, 1221 1017.694 C 1259.787 1001.221, 1307.818 965.858, 1339.852 930.191 C 1460.375 795.998, 1488.781 609.032, 1412.581 451.500 C 1350.098 322.327, 1240.457 235.724, 1097.500 202.624 C 1072.356 196.802, 1025.206 192.566, 1008 194.584"
+                                stroke="none"
+                                fill="#0aaa8a"
+                                fill-rule="evenodd" />
+                        </svg>
+        
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="user-progress"
+                            aria-label="Your W3Schools Profile Progress">
+                            <path
+                                class="user-progress-circle1"
+                                fill="none"
+                                d="M 25.99650934151373 15.00000030461742 A 20 20 0 1 0 26 15"></path>
+                            <path
+                                class="user-progress-circle2"
+                                fill="none"
+                                d="M 26 15 A 20 20 0 0 0 26 15"></path>
+                        </svg>
+        
+                        <span class="user-progress-star">&#x2605;</span>
+        
+                        <span class="user-progress-point">+1</span>
+                    </a>
+                    <a
+                        href="https://pathfinder.w3schools.com"
+                        class="user-authenticated tnb-dashboard-btn w3-bar-item w3-button w3-hide w3-right w3-white ga-top ga-top-dashboard"
+                        title="Your W3Schools Dashboard"
+                        aria-label="Your W3Schools Dashboard">
+                        My django-tutorial
+                    </a>
+                    
+                    <a
+                        target="_blank"
+                        href="https://campus.w3schools.com/collections/course-catalog"
+                        class="user-authenticated tnb-certificates-btn w3-bar-item w3-button w3-hide w3-right w3-white ga-top ga-top-certificates"
+                        title="W3Schools Certificates"
+                        aria-label="W3Schools Certificates">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="1em"
+                            viewBox="0 0 576 512"
+                            aria-hidden="true">
+                            <path
+                                d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
+                                fill="currentColor" />
+                        </svg>
+                        Get Certified
+                    </a>
+        
+                    <a
+                        href="https://spaces.w3schools.com/space/"
+                        class="user-authenticated tnb-spaces-btn w3-bar-item w3-button w3-hide w3-right w3-white ga-top ga-top-spaces"
+                        title="Go to Your W3Schools Space"
+                        aria-label="Go to Your W3Schools Space">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="1em"
+                            viewBox="0 0 640 512"
+                            aria-hidden="true">
+                            <path
+                                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+                                fill="currentColor" />
+                        </svg>
+                        Spaces
+                    </a>
+        
+                    <a
+                        href="plus/index.php"
+                        class="user-authenticated tnb-jobs-btn w3-bar-item w3-button w3-hide w3-right w3-white ga-top ga-top-goals"
+                        title="Get personalized learning journey based on your current skills and goals"
+                        aria-label="Get personalized learning journey based on your current skills and goals">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="36"
+                            viewBox="0 0 12 16"
+                            fill="none"
+                            aria-hidden="true">
+                            <path
+                                d="M6.65723 6.24707C6.76704 5.91764 7.233 5.91765 7.34281 6.24707L7.98828 8.1835C8.276 9.04666 8.95332 9.72399 9.81648 10.0117L11.7529 10.6572C12.0824 10.767 12.0824 11.233 11.7529 11.3428L9.81649 11.9883C8.95332 12.276 8.27599 12.9533 7.98828 13.8165L7.34281 15.7529C7.233 16.0823 6.76704 16.0823 6.65723 15.7529L6.01173 13.8165C5.72401 12.9533 5.04669 12.276 4.18353 11.9883L2.24707 11.3428C1.91764 11.233 1.91764 10.767 2.24707 10.6572L4.18353 10.0117C5.04669 9.72399 5.72401 9.04667 6.01173 8.18352L6.65723 6.24707Z"
+                                fill="#9763f6" />
+                            <path
+                                d="M2.79434 1.14824C2.86023 0.950586 3.1398 0.950587 3.20569 1.14824L3.59297 2.3101C3.7656 2.828 4.172 3.2344 4.6899 3.40703L5.85177 3.79432C6.04942 3.86021 6.04942 4.13978 5.85177 4.20567L4.6899 4.59296C4.172 4.76559 3.7656 5.17199 3.59297 5.68989L3.20569 6.85176C3.13981 7.04941 2.86023 7.04942 2.79434 6.85176L2.40704 5.68988C2.23441 5.17198 1.82801 4.76559 1.31012 4.59296L0.148241 4.20567C-0.0494137 4.13978 -0.0494138 3.86021 0.148241 3.79432L1.31012 3.40703C1.82802 3.2344 2.23441 2.82801 2.40704 2.31011L2.79434 1.14824Z"
+                                fill="#9763f6" />
+                            <path
+                                d="M9.8629 0.0988265C9.90682 -0.032943 10.0932 -0.0329419 10.1371 0.098828L10.3953 0.873401C10.5104 1.21867 10.7813 1.4896 11.1266 1.60469L11.9012 1.86288C12.0329 1.9068 12.0329 2.09319 11.9012 2.13711L11.1266 2.39531C10.7813 2.51039 10.5104 2.78133 10.3953 3.12659L10.1371 3.90117C10.0932 4.03294 9.90682 4.03294 9.8629 3.90117L9.6047 3.12659C9.48961 2.78132 9.21868 2.5104 8.87342 2.39531L8.09883 2.13711C7.96706 2.09319 7.96706 1.9068 8.09883 1.86288L8.87342 1.60469C9.21868 1.4896 9.48961 1.21867 9.6047 0.873408L9.8629 0.0988265Z"
+                                fill="#9763f6" />
+                        </svg>
+                        Plus
+                    </a> -->
+                    
+                </div>
+            </div>
+        
+            <nav id="tnb-mobile-nav" class="tnb-mobile-nav w3-hide">
+                <div class="w3-container">
+                    <a
+                        href="#"
+                        class="user-authenticated w3-button w3-hide ga-top ga-top-dashboard"
+                        title="My django-tutorial"
+                        aria-label="My django-tutorial">
+                        <span class="tnb-title">My django-tutorial</span>
+                    </a>
+        
+                    <div
+                        class="tnb-mobile-nav-section"
+                        data-section="tutorials">
+                        <div
+                            class="tnb-mobile-nav-section-toggle-btn w3-button ga-top ga-top-menu-tut-and-ref"
+                            onclick="TopNavBar.toggleMobileNav(event, 'tutorials');"
+                            aria-label="Tutorials"
+                            role="button">
+                            <span class="tnb-title">Tutorials</span>
+                            <i
+                                class="tnb-icon fa fa-caret-down"
+                                aria-hidden="true"></i>
+                        </div>
+        
+                        <div
+                            id="sectionxs_tutorials"
+                            class="tnb-mobile-nav-section-body">
+                            &nbsp;
+                        </div>
+                    </div>
+        
+                    <div
+                        class="tnb-mobile-nav-section"
+                        data-section="exercises">
+                        <div
+                            class="tnb-mobile-nav-section-toggle-btn w3-button ga-top ga-top-menu-exc-and-quz"
+                            onclick="TopNavBar.toggleMobileNav(event, 'exercises')"
+                            aria-label="Exercises"
+                            role="button">
+                            <span class="tnb-title">Exercises</span>
+                            <i
+                                class="tnb-icon fa fa-caret-down"
+                                aria-hidden="true"></i>
+                        </div>
+        
+                        <div
+                            id="sectionxs_exercises"
+                            class="tnb-mobile-nav-section-body">
+                            &nbsp;
+                        </div>
+                    </div>
+        
+                    <div
+                        class="tnb-mobile-nav-section"
+                        data-section="certified">
+                        <div
+                            class="tnb-mobile-nav-section-toggle-btn tnb-paid-service w3-button ga-top ga-top-menu-cert-and-course"
+                            onclick="TopNavBar.toggleMobileNav(event, 'certified')"
+                            aria-label="Certificates"
+                            role="button">
+                            <span class="tnb-title">Certificates</span>
+                            <i
+                                class="tnb-icon fa fa-caret-down"
+                                aria-hidden="true"></i>
+                        </div>
+        
+                        <div
+                            id="sectionxs_certified"
+                            class="tnb-mobile-nav-section-body">
+                            &nbsp;
+                        </div>
+                    </div>
+        
+                    <div class="tnb-mobile-nav-section" data-section="services">
+                        <div
+                            class="tnb-mobile-nav-section-toggle-btn w3-button ga-top ga-top-menu-services"
+                            onclick="TopNavBar.toggleMobileNav(event, 'services')"
+                            aria-label="Services"
+                            role="button">
+                            <span class="tnb-title">Services</span>
+                            <i
+                                class="tnb-icon fa fa-caret-down"
+                                aria-hidden="true"></i>
+                        </div>
+        
+                        <div
+                            id="sectionxs_services"
+                            class="tnb-mobile-nav-section-body">
+                            &nbsp;
+                        </div>
+                    </div>
+        
+        
+        
+                    <div class="tnb-social-network-btns">
+                        <a
+                            target="_blank"
+                            href="#"
+                            title="No title"
+                            class="w3-button w3-round ga-fp">
+                            <i
+                                class="tnb-icon fa fa-youtube"
+                                aria-hidden="true"></i>
+                        </a>
+        
+                        <a
+                            target="_blank"
+                            href="#"
+                            title="No linkedin"
+                            class="w3-button w3-round ga-fp">
+                            <i class="tnb-icon fa" aria-hidden="true">
+                                &#62220;
+                            </i>
+                        </a>
+        
+                        <a
+                            target="_blank"
+                            href="#"
+                            title="No discord"
+                            class="w3-button w3-round ga-fp">
+                            <i class="tnb-icon fa -discord" aria-hidden="true">
+                                &#59399;
+                            </i>
+                        </a>
+        
+                        <a
+                            target="_blank"
+                            href="#"
+                            title="No facebook"
+                            class="w3-button w3-round ga-fp">
+                            <i class="tnb-icon fa" aria-hidden="true">
+                                &#59398;
+                            </i>
+                        </a>
+        
+                        <a
+                            target="_blank"
+                            href="#"
+                            title="No instagram"
+                            class="w3-button w3-round ga-fp">
+                            <i class="tnb-icon fa" aria-hidden="true">
+                                &#61805;
+                            </i>
+                        </a>
+                    </div>
+                </div>
+        
+                <div
+                    class="w3-button tnb-close-menu-btn w3-round ga-top ga-top-close-accordion"
+                    tabindex="0"
+                    onclick="TopNavBar.closeMenu()"
+                    role="button"
+                    aria-label="Close menu">
+                    <span>&times;</span>
+                </div>
+            </nav>
+        
+            <div id="dropdown-nav-outer-wrapper">
+                <div id="dropdown-nav-inner-wrapper">
+                    
+                </div>
+            </div>
+        
+        
+            <div id="googleSearch">
+                <div class="gcse-search"></div>
+            </div>
+        </div>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="ns.html?id=GTM-KTCFC3S"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <script>
+            (function setThemeMode() {
+                var x = localStorage.getItem("preferredmode");
+                var y = localStorage.getItem("preferredpagemode");
+                if (x == "dark") {
+                    document.body.className += " darktheme";
+                }
+                if (y == "dark") {
+                    document.body.className += " darkpagetheme";
+                }
+            })();
+        </script>
+        <style>
+            #subtopnav {
+              position:fixed;
+              background-color: #04AA6D;
+              color:#f1f1f1;
+              padding:0;
+              letter-spacing:1px;
+              font-family: 'Source Sans Pro Topnav', sans-serif;
+              font-size:0;
+              top:56px;
+              z-index:2;
+              width:100%;
+              white-space:nowrap;
+              overflow:auto;
+              scrollbar-width: none;
+            }
+            #subtopnav a{
+              display:inline-block;
+              width:auto;
+              margin:0!important;
+              padding:5px 15px 5px 15px !important;
+              font-size:15px!important;
+              text-decoration: none;
+              line-height: 1.5;
+            }
+            #subtopnav a:hover,#subtopnav a:focus,#subtopnav a:active{
+              background-color:#092E20 !important;
+              color:#ffffff !important;
+            }
+            #subtopnav a.active{
+              background-color: #092E20!important;
+              color:#fff!important;
+            }
+            #btn_container_subtopnav {
+              position:fixed;
+              right:0;
+              top:56px;
+              font-size:0;
+              xxborder-left:10px solid rgba(40, 42, 53,0.5);
+        
+            }
+            #btn_container_subtopnav a{
+              line-height:1.3!important;
+              padding-top:7px!important;
+              padding-bottom:6px!important;
+              font-size:15px;
+              background-color:#282A35;
+            }
+            #scroll_left_btn {
+              cursor:pointer;
+              display:none;
+              position:fixed;
+              left:0;
+              top:56px;
+              font-size: 15px;
+              xborder-right: 10px solid rgba(40, 42, 53,0.5);
+              xbackground: red;
+              }
+            #scroll_left_btn span {
+              xbackground-color:#282A35;
+              background: linear-gradient(to right, #282A35 70%, transparent 100%);
+              display:block;
+              padding-top:5px;
+              padding-bottom:5px;
+            }
+            #scroll_left_btn span:hover {
+              background: linear-gradient(to right, #000 95%, transparent 100%);
+            }
+            #scroll_right_btn {
+              cursor:pointer;
+              float:left;
+              font-size:15px;
+              xxbackground-color:#282A35;
+              background: linear-gradient(to left, #282A35 70%, transparent 100%);
+        
+              padding-top:5px;
+              padding-bottom:5px;
+            }
+            #scroll_right_btn:hover {
+              background: linear-gradient(to left, #000 95%, transparent 100%);
+            }
+            #menubtn_container {
+              position:fixed;
+              left:0;
+              top:56px;
+              xborder-right:10px solid rgba(40, 42, 53,0.5);
+              height:33px;
+              color:white;
+              font-size:15px;
+            }
+            #menubtn_container span {
+              background-color:#282A35;
+            }
+            #darkmodemenu {
+              position:fixed!important;
+              right:0 !important;
+            }
+            #subtopnav::-webkit-scrollbar {
+              display:none!important;
+            }
+            #google_translate_element a{
+              font-size:13px!important;
+        
+              line-height: normal;
+            }
+            #google_translate_element a:hover{
+              background-color:#fff!important;
+              color:#000!important;
+            }
+              @media screen and (max-width: 992px){
+                #subtopnav a.subtopnav_firstitem {
+                  margin-left:50px!important;
+                }
+              }
+        </style>
+        <script>
+            activate_subtopnav_scroll = 0;
+            from_scrollpos = -1;
+            current_scrollpos = -1;
+            goto_tut = 1;
+            function startscrolling_subtopnav(event) {
+                event.preventDefault();
+                from_scrollpos = event.clientX;
+                activate_subtopnav_scroll = 1;
+            }
+            function scrolling_subtopnav(event) {
+                current_scrollpos = event.clientX;
+                if (current_scrollpos == from_scrollpos) return false;
+                event.preventDefault();
+                if (event.buttons == 0) return false;
+                var scrollspeed;
+                if (activate_subtopnav_scroll == 1) {
+                    goto_tut = 0;
+                    scrollspeed = current_scrollpos - from_scrollpos;
+                    scrollspeed = Math.abs(scrollspeed);
+                    if (current_scrollpos < from_scrollpos) {
+                        document.getElementById(
+                            "scroll_left_btn"
+                        ).style.display = "block";
+                        document.getElementById("subtopnav").scrollLeft +=
+                            scrollspeed;
+                    } else {
+                        document.getElementById("subtopnav").scrollLeft -=
+                            scrollspeed;
+                    }
+                    scrollbtn_visible();
+                    from_scrollpos = current_scrollpos;
+                }
+            }
+            function endscrolling_subtopnav(event) {
+                event.preventDefault();
+                activate_subtopnav_scroll = 0;
+                from_scrollpos = -1;
+                current_scrollpos = -1;
+            }
+            function pellessii(event) {
+                if (goto_tut == 0) {
+                    event.preventDefault();
+                    goto_tut = 1;
+                    return false;
+                }
+            }
+            var scrollspeed = 1;
+            var scrollinterval;
+            function scrollmenow(n) {
+                scrollinterval = window.setInterval(function () {
+                    scrollspeed = scrollspeed * 1.1;
+                    if (scrollspeed > 10) {
+                        scrollspeed = 10;
+                    }
+                    if (n == 1) {
+                        document.getElementById("subtopnav").scrollLeft +=
+                            scrollspeed;
+                    } else {
+                        document.getElementById("subtopnav").scrollLeft -=
+                            scrollspeed;
+                    }
+                    scrollbtn_visible();
+                }, 10);
+            }
+        
+            var p_s_l = 0;
+            var x_s_l = 0;
+            function stopscrollmenow() {
+                scrollspeed = 1;
+                window.clearInterval(scrollinterval);
+            }
+        
+            //window.addEventListener("load", subtopnav_intoview);
+        
+            function subtopnav_intoview() {
+                var a,
+                    b,
+                    c,
+                    d,
+                    i = 0;
+                a = document.getElementById("subtopnav");
+                if (!a || !a.getElementsByClassName) {
+                    return false;
+                }
+                var x = a.getElementsByTagName("A");
+                b = document.location.pathname;
+                if (
+                    b.indexOf("python/numpy/") > -1 ||
+                    b.indexOf("python/pandas/") > -1 ||
+                    b.indexOf("python/scipy/") > -1
+                ) {
+                    for (i = 0; i < x.length; i++) {
+                        c = x[i].pathname;
+                        if (
+                            (b.indexOf("python/numpy/") > -1 &&
+                                c == "python/numpy/default.asp") ||
+                            (b.indexOf("python/pandas/") > -1 &&
+                                c == "python/pandas/default.asp") ||
+                            (b.indexOf("python/scipy/") > -1 &&
+                                c == "python/scipy/index.php")
+                        ) {
+                            x[i].className += " active";
+                            break;
+                        }
+                    }
+                } else {
+                    for (i = 0; i < x.length; i++) {
+                        c = x[i].pathname;
+                        if (
+                            c.indexOf("void(0)") == -1 &&
+                            b.substr(0, b.indexOf("", 1)) ==
+                                c.substr(0, c.indexOf("", 1))
+                        ) {
+                            x[i].className += " active";
+                            break;
+                        }
+                    }
+                }
+                d = a.getElementsByClassName("active");
+                if (d.length < 1) {
+                    return false;
+                }
+                while (!amIIntoView(a, d[0])) {
+                    i++;
+                    if (i > 1000) {
+                        break;
+                    }
+                    a.scrollLeft += 10;
+                }
+                scrollbtn_visible();
+            }
+        
+            function amIIntoView(x, y) {
+                var a = x.scrollLeft;
+                var b = a + window.innerWidth;
+                var ytop = y.offsetLeft;
+                var c = y.offsetWidth;
+                var d = 0;
+                if (document.getElementById("btn_container_subtopnav"))
+                    d = document.getElementById(
+                        "btn_container_subtopnav"
+                    ).offsetWidth;
+                var ybottom = ytop + c + d + 20;
+                return ybottom <= b && ytop >= a;
+            }
+        </script>
+		<div
+        id="subtopnav"
+        onmousedown="startscrolling_subtopnav(event)"
+        onmousemove="scrolling_subtopnav(event)"
+        onmouseup="endscrolling_subtopnav(event)"
+        onclick="return pellessii(event)">
+        <div id="scroll_left_btn" class="w3-hide-medium w3-hide-small">
+            <span
+                onmousedown="scrollmenow(-1)"
+                onmouseup="stopscrollmenow()"
+                onmouseout="stopscrollmenow()"
+                >&nbsp;&nbsp;&nbsp;&#10094;&nbsp;&nbsp;&nbsp;</span
+            >
+        </div>
+        <!-- <div id="menubtn_container">
+            <span>
+                <a
+                    href="javascript:void(0);"
+                    class="topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button ga-nav"
+                    style="
+                        line-height: 1.1;
+                        padding-top: 8px !important;
+                        padding-bottom: 8px !important;
+                    "
+                    onclick="open_menu()"
+                    title="Menu"></a>
+            </span>
+        </div> -->
+        
+        <!-- <a href="/" class="ga-nav " title="Python for Django">
+            PYTHON FOR DJANGO
+        </a>
+        <a href="/" class="ga-nav " title="Django Tutorial">
+            DJANGO
+        </a> -->
+        <a href="#" class="ga-nav active" title="Django RoadMap">
+            RoadMap - Django
+        </a>
+        <a
+            href="javascript:void(0)"
+            class="ga-nav"
+            title = "Django Interview Questions"
+            style="width: 50px; visibility: hidden"></a>
+        <!-- <div id="btn_container_subtopnav">
+            <div id="scroll_right_btn" class="w3-hide-medium w3-hide-small">
+                <span
+                    onmousedown="scrollmenow(1)"
+                    onmouseup="stopscrollmenow()"
+                    onmouseout="stopscrollmenow()"
+                    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#10095;&nbsp;&nbsp;&nbsp;</span
+                >
+            </div>
+        </div> -->
+    </div>
+		
+		<script>
+			subtopnav_intoview();
+		</script>
+<style>
+body{margin-top:20px;}
+.timeline {
+border-left: 3px solid #727cf5;
+border-bottom-right-radius: 4px;
+border-top-right-radius: 4px;
+background: rgba(114, 124, 245, 0.09);
+margin: 0 auto;
+letter-spacing: 0.2px;
+position: relative;
+line-height: 1.4em;
+font-size: 1.03em;
+padding: 50px;
+list-style: none;
+text-align: left;
+max-width: 40%;
+}
+
+@media (max-width: 767px) {
+.timeline {
+    max-width: 98%;
+    padding: 25px;
+}
+}
+
+.timeline h1 {
+font-weight: 300;
+font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+font-weight: 600;
+font-size: 1rem;
+margin-bottom: 10px;
+}
+
+.timeline .event {
+border-bottom: 1px dashed #e8ebf1;
+padding-bottom: 25px;
+margin-bottom: 25px;
+position: relative;
+}
+
+@media (max-width: 767px) {
+.timeline .event {
+    padding-top: 30px;
+}
+}
+
+.timeline .event:last-of-type {
+padding-bottom: 0;
+margin-bottom: 0;
+border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+position: absolute;
+display: block;
+top: 0;
+}
+
+.timeline .event:before {
+left: -207px;
+content: attr(data-date);
+text-align: right;
+font-weight: 100;
+font-size: 0.9em;
+min-width: 120px;
+}
+
+@media (max-width: 767px) {
+.timeline .event:before {
+    left: 0px;
+    text-align: left;
+}
+}
+
+.timeline .event:after {
+-webkit-box-shadow: 0 0 0 3px #727cf5;
+box-shadow: 0 0 0 3px #727cf5;
+left: -55.8px;
+background: #fff;
+border-radius: 50%;
+height: 9px;
+width: 9px;
+content: "";
+top: 5px;
+}
+
+@media (max-width: 767px) {
+.timeline .event:after {
+    left: -31.8px;
+}
+}
+
+.rtl .timeline {
+border-left: 0;
+text-align: right;
+border-bottom-right-radius: 0;
+border-top-right-radius: 0;
+border-bottom-left-radius: 4px;
+border-top-left-radius: 4px;
+border-right: 3px solid #727cf5;
+}
+
+.rtl .timeline .event::before {
+left: 0;
+right: -170px;
+}
+
+.rtl .timeline .event::after {
+left: 0;
+right: -55.8px;
+}
+</style>
+    <div class="container" style="padding:50px 20px 20px 20px;">
+        <div class="row">
+            <div class="col-6 col-sm-10">
+                <div class="card col-6 col-sm-10">
+                    <div class="card-body">
+                        <h6 class="card-title"></h6>
+                        <div id="content">
+                            <ul class="timeline">
+                                <h1 class="h1">Django Developer Timeline</h1>
+                                <li class="event" data-date=" ">
+                                    <h2>Python Fundamentals</h2>
+                                    <p>
+                                        <ul>
+                                            <li>Understanding Data Types and Variables</li>
+                                            <li>Control Structures (if-else, loops)</li>
+                                            <li>Functions and Modules</li>
+                                            <li>Working with Collections (Lists, Tuples, Dictionaries)</li>
+                                            <li>Exception Handling</li>
+                                            <li>File Handling and I/O Operations</li>
+                                            <li>
+                                                Understanding Object-Oriented Programming (OOP) Concepts
+                                                <ul>
+                                                    <li>Classes and Objects</li>
+                                                    <li>Inheritance and Polymorphism</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </li>
+                                <li class="event">
+                                    <h2>Web Development Basics</h2>
+                                    <p>
+                                        <ul>
+                                            <li>HTTP and the Web</li>
+                                            <li>HTML, CSS, and JavaScript Basics</li>
+                                            <li>Understanding Web Servers and Clients</li>
+                                            <li>Basics of Frontend Frameworks (e.g., Bootstrap)</li>
+                                            <li>Version Control with Git</li>
+                                        </ul>
+                                    </p>
+                                </li>
+                                <li class="event">
+                                    <h2>Django Core Concepts</h2>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                Setting Up a Django Project
+                                                <ul>
+                                                    <li>Installing Django and Creating a Project</li>
+                                                    <li>Understanding the Django Project Structure</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Django Models
+                                                <ul>
+                                                    <li>Defining Models</li>
+                                                    <li>Database Migrations</li>
+                                                    <li>Querying the Database</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Django Views
+                                                <ul>
+                                                    <li>Function-based Views (FBVs)</li>
+                                                    <li>Class-based Views (CBVs)</li>
+                                                    <li>Handling Forms and User Input</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Django Templates
+                                                <ul>
+                                                    <li>Template Syntax</li>
+                                                    <li>Template Inheritance</li>
+                                                    <li>Using Template Filters and Tags</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </li>
+                                <li class="event">
+                                    <h2>Working with Django Admin</h2>
+                                    <p>
+                                        <ul>
+                                            <li>Customizing the Admin Interface</li>
+                                            <li>Registering Models with the Admin</li>
+                                            <li>Creating Admin Actions</li>
+                                            <li>Using the Admin for Data Management</li>
+                                        </ul>
+                                    </p>
+                                </li>
+                                <li class="event">
+                                    <h2>Django Authentication and Authorization</h2>
+                                    <p>
+                                        <ul>
+                                            <li>Understanding User Authentication</li>
+                                            <li>Implementing Login, Logout, and Signup</li>
+                                            <li>Password Management and Security</li>
+                                            <li>Working with Permissions and Groups</li>
+                                            <li>Implementing Social Authentication (e.g., OAuth)</li>
+                                        </ul>
+                                    </p>
+                                </li>
+                                <li class="event">
+                                    <h2>Advanced Django Features</h2>
+                                    <p>
+                                        <ul>
+                                            <li>Working with Middleware</li>
+                                            <li>Caching in Django</li>
+                                            <li>Sending Emails in Django</li>
+                                            <li>Handling File Uploads</li>
+                                            <li>Working with Signals</li>
+                                            <li>Integrating Celery for Asynchronous Tasks</li>
+                                        </ul>
+                                    </p>
+                                </li>
+                                <li class="event">
+                                    <h2>Django REST Framework (DRF) Guide</h2>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                Introduction to Django REST Framework
+                                                <ul>
+                                                    <li>Understanding RESTful APIs</li>
+                                                    <li>Installing and Setting Up DRF</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Serializers
+                                                <ul>
+                                                    <li>Creating and Using Serializers</li>
+                                                    <li>Serializer Fields and Validation</li>
+                                                    <li>Model Serializers vs. Regular Serializers</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Views in DRF
+                                                <ul>
+                                                    <li>Function-based Views</li>
+                                                    <li>Class-based Views</li>
+                                                    <li>ViewSets and Routers</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Authentication in DRF
+                                                <ul>
+                                                    <li>Token-based Authentication</li>
+                                                    <li>Session-based Authentication</li>
+                                                    <li>Custom Authentication Classes</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Permissions and Throttling
+                                                <ul>
+                                                    <li>Setting Up Permissions</li>
+                                                    <li>Implementing Throttling for Rate Limiting</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Working with DRF Routers
+                                                <ul>
+                                                    <li>Creating Custom Routes</li>
+                                                    <li>Nested Routes</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Testing DRF APIs
+                                                <ul>
+                                                    <li>Writing Unit Tests for APIs</li>
+                                                    <li>Using Django’s Test Client</li>
+                                                    <li>Using DRF’s Test Framework</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Advanced DRF Topics
+                                                <ul>
+                                                    <li>Implementing Pagination in APIs</li>
+                                                    <li>Using Filters in DRF</li>
+                                                    <li>Handling File Uploads with DRF</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Deployment Considerations for DRF
+                                                <ul>
+                                                    <li>API Versioning</li>
+                                                    <li>Optimizing API Performance</li>
+                                                    <li>API Documentation with Swagger or drf-yasg</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </li>
+                                <li class="event">
+                                    <h2>Testing in Django</h2>
+                                    <p>
+                                        <ul>
+                                            <li>Unit Testing with Django's Test Framework</li>
+                                            <li>Writing Integration Tests</li>
+                                            <li>Testing Views, Models, and Forms</li>
+                                            <li>Using Mocking and Fixtures</li>
+                                            <li>Continuous Integration with Django</li>
+                                        </ul>
+                                    </p>
+                                </li>
+                                <li class="event">
+                                    <h2>Django Deployment</h2>
+                                    <p>
+                                        <ul>
+                                            <li>Setting Up a Production Server (Gunicorn, Nginx)</li>
+                                            <li>Using Docker with Django</li>
+                                            <li>Setting Up a PostgreSQL Database</li>
+                                            <li>Configuring Django Settings for Production</li>
+                                            <li>Deploying with CI/CD Pipelines</li>
+                                            <li>Monitoring and Logging in Production</li>
+                                        </ul>
+                                    </p>
+                                </li>
+                                <li class="event">
+                                    <h2>Django Ecosystem and Third-Party Packages</h2>
+                                    <p>
+                                        <ul>
+                                            <li>Popular Django Packages (e.g., Django Debug Toolbar, Django Extensions)</li>
+                                            <li>Integrating Django with Celery for Task Queues</li>
+                                            <li>Using Django Channels for WebSockets</li>
+                                            <li>Working with Django CMS</li>
+                                            <li>Django with GraphQL (Graphene-Django)</li>
+                                        </ul>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+		<script src="assets/assets/lib/topnav/main.js">
+		</script>
+
+		<script>
+			MyLearning.loadUser("footer", function () {
+				// if (!UserSession.loggedIn) {
+				//   addMyLearnButt();
+				// }
+			});
+			function docReady(fn) {
+				document.addEventListener("DOMContentLoaded", fn);
+				if (
+					document.readyState === "interactive" ||
+					document.readyState === "complete"
+				) {
+					fn();
+				}
+			}
+			uic_r_d();
+
+			const upperfeatureshowcaselink = document.getElementById(
+				"upperfeatureshowcaselink"
+			);
+			if (upperfeatureshowcaselink) {
+				displayInternalFeatures();
+			}
+			
+		</script>
+        <script>
+        </script>
+	</body>
+</html>

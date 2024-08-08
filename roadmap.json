@@ -1,0 +1,201 @@
+[
+    {
+        "name": "Python Fundamentals",
+        "children": [
+            { "name": "Understanding Data Types and Variables" },
+            { "name": "Control Structures (if-else, loops)" },
+            { "name": "Functions and Modules" },
+            { "name": "Working with Collections (Lists, Tuples, Dictionaries)" },
+            { "name": "Exception Handling" },
+            { "name": "File Handling and I/O Operations" },
+            {
+                "name": "Understanding Object-Oriented Programming (OOP) Concepts",
+                "children": [
+                    { "name": "Classes and Objects" },
+                    { "name": "Inheritance and Polymorphism" }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Web Development Basics",
+        "children": [
+            { "name": "HTTP and the Web" },
+            { "name": "HTML, CSS, and JavaScript Basics" },
+            { "name": "Understanding Web Servers and Clients" },
+            { "name": "Basics of Frontend Frameworks (e.g., Bootstrap)" },
+            { "name": "Version Control with Git" }
+        ]
+    },
+    {
+        "name": "Django Core Concepts",
+        "children": [
+            {
+                "name": "Setting Up a Django Project",
+                "children": [
+                    { "name": "Installing Django and Creating a Project" },
+                    { "name": "Understanding the Django Project Structure" }
+                ]
+            },
+            {
+                "name": "Django Models",
+                "children": [
+                    { "name": "Defining Models" },
+                    { "name": "Database Migrations" },
+                    { "name": "Querying the Database" }
+                ]
+            },
+            {
+                "name": "Django Views",
+                "children": [
+                    { "name": "Function-based Views (FBVs)" },
+                    { "name": "Class-based Views (CBVs)" },
+                    { "name": "Handling Forms and User Input" }
+                ]
+            },
+            {
+                "name": "Django Templates",
+                "children": [
+                    { "name": "Template Syntax" },
+                    { "name": "Template Inheritance" },
+                    { "name": "Using Template Filters and Tags" }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Working with Django Admin",
+        "children": [
+            { "name": "Customizing the Admin Interface" },
+            { "name": "Registering Models with the Admin" },
+            { "name": "Creating Admin Actions" },
+            { "name": "Using the Admin for Data Management" }
+        ]
+    },
+    {
+        "name": "Django Authentication and Authorization",
+        "children": [
+            { "name": "Understanding User Authentication" },
+            { "name": "Implementing Login, Logout, and Signup" },
+            { "name": "Password Management and Security" },
+            { "name": "Working with Permissions and Groups" },
+            { "name": "Implementing Social Authentication (e.g., OAuth)" }
+        ]
+    },
+    {
+        "name": "Advanced Django Features",
+        "children": [
+            { "name": "Working with Middleware" },
+            { "name": "Caching in Django" },
+            { "name": "Sending Emails in Django" },
+            { "name": "Handling File Uploads" },
+            { "name": "Working with Signals" },
+            { "name": "Integrating Celery for Asynchronous Tasks" }
+        ]
+    },
+    {
+        "name": "Django REST Framework (DRF) Guide",
+        "children": [
+            {
+                "name": "Introduction to Django REST Framework",
+                "children": [
+                    { "name": "Understanding RESTful APIs" },
+                    { "name": "Installing and Setting Up DRF" }
+                ]
+            },
+            {
+                "name": "Serializers",
+                "children": [
+                    { "name": "Creating and Using Serializers" },
+                    { "name": "Serializer Fields and Validation" },
+                    { "name": "Model Serializers vs. Regular Serializers" }
+                ]
+            },
+            {
+                "name": "Views in DRF",
+                "children": [
+                    { "name": "Function-based Views" },
+                    { "name": "Class-based Views" },
+                    { "name": "ViewSets and Routers" }
+                ]
+            },
+            {
+                "name": "Authentication in DRF",
+                "children": [
+                    { "name": "Token-based Authentication" },
+                    { "name": "Session-based Authentication" },
+                    { "name": "Custom Authentication Classes" }
+                ]
+            },
+            {
+                "name": "Permissions and Throttling",
+                "children": [
+                    { "name": "Setting Up Permissions" },
+                    { "name": "Implementing Throttling for Rate Limiting" }
+                ]
+            },
+            {
+                "name": "Working with DRF Routers",
+                "children": [
+                    { "name": "Creating Custom Routes" },
+                    { "name": "Nested Routes" }
+                ]
+            },
+            {
+                "name": "Testing DRF APIs",
+                "children": [
+                    { "name": "Writing Unit Tests for APIs" },
+                    { "name": "Using Django’s Test Client" },
+                    { "name": "Using DRF’s Test Framework" }
+                ]
+            },
+            {
+                "name": "Advanced DRF Topics",
+                "children": [
+                    { "name": "Implementing Pagination in APIs" },
+                    { "name": "Using Filters in DRF" },
+                    { "name": "Handling File Uploads with DRF" }
+                ]
+            },
+            {
+                "name": "Deployment Considerations for DRF",
+                "children": [
+                    { "name": "API Versioning" },
+                    { "name": "Optimizing API Performance" },
+                    { "name": "API Documentation with Swagger or drf-yasg" }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Testing in Django",
+        "children": [
+            { "name": "Unit Testing with Django's Test Framework" },
+            { "name": "Writing Integration Tests" },
+            { "name": "Testing Views, Models, and Forms" },
+            { "name": "Using Mocking and Fixtures" },
+            { "name": "Continuous Integration with Django" }
+        ]
+    },
+    {
+        "name": "Django Deployment",
+        "children": [
+            { "name": "Setting Up a Production Server (Gunicorn, Nginx)" },
+            { "name": "Using Docker with Django" },
+            { "name": "Setting Up a PostgreSQL Database" },
+            { "name": "Configuring Django Settings for Production" },
+            { "name": "Deploying with CI/CD Pipelines" },
+            { "name": "Monitoring and Logging in Production" }
+        ]
+    },
+    {
+        "name": "Django Ecosystem and Third-Party Packages",
+        "children": [
+            { "name": "Popular Django Packages (e.g., Django Debug Toolbar, Django Extensions)" },
+            { "name": "Integrating Django with Celery for Task Queues" },
+            { "name": "Using Django Channels for WebSockets" },
+            { "name": "Working with Django CMS" },
+            { "name": "Django with GraphQL (Graphene-Django)" }
+        ]
+    }
+]
