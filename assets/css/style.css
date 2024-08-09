@@ -52,6 +52,16 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
 #main {
   position: relative;
 }
@@ -99,7 +109,7 @@ h6 {
   /* countdown */
 }
 
-#header h1 {
+#header h1 ,.h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -107,7 +117,8 @@ h6 {
   color: #fff;
 }
 
-#header h2 {
+
+#header h2 , #header .h2 {
   color: #eee;
   margin-bottom: 40px;
   font-size: 22px;
@@ -126,13 +137,13 @@ h6 {
   padding: 15px 0;
 }
 
-#header .countdown div h3 {
+#header .countdown div h3, #header .countdown div .h3 {
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 15px;
 }
 
-#header .countdown div h4 {
+#header .countdown div h4, #header .countdown div .h4  {
   font-size: 16px;
   font-weight: 600;
 }
@@ -144,12 +155,12 @@ h6 {
     margin: 10px 8px;
   }
 
-  #header .countdown div h3 {
+  #header .countdown div h3, #header .countdown div .h3 {
     font-size: 28px;
     margin-bottom: 10px;
   }
 
-  #header .countdown div h4 {
+  #header .countdown div h4 , #header .countdown div .h4 {
     font-size: 14px;
     font-weight: 500;
   }
@@ -160,7 +171,7 @@ h6 {
   text-align: center;
 }
 
-#header .subscribe h4 {
+#header .subscribe h4 , #header .subscribe .h4 {
   font-size: 20px;
   font-weight: 600;
   color: #fff;
@@ -532,7 +543,7 @@ section {
   padding-bottom: 30px;
 }
 
-.section-title h2 {
+.section-title h2, .section-title .h2 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
@@ -541,7 +552,7 @@ section {
   position: relative;
 }
 
-.section-title h2::after {
+.section-title h2::after, .section-title .h2::after {
   content: "";
   position: absolute;
   display: block;
@@ -619,7 +630,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.contact .info h4 {
+.contact .info h4, .contact .info .h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
